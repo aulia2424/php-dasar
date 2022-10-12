@@ -10,22 +10,29 @@ echo $lemariBaju[0]; // ini menggunakan number
 echo ("\n");
 
 //two-dimensional array
-$people = array(
-    'online'=>array('David', 'Amy'),
-    'offline'=>array('John', 'Rob', 'Jack'),
-    'away'=>array('Arthur', 'Daniel')
- );
-echo $people['online'][0];
+// $people = array(
+//     'online'=>array('David', 'Amy'),
+//     'offline'=>array('John', 'Rob', 'Jack'),
+//     'away'=>array('Arthur', 'Daniel')
+//  );
+// echo $people['online'][0];
 
-echo ("\n");
+// echo ("\n");
 
-//membuat array
-$secoutfits = array(
-    'Hoodie'=>array('0811', 'Addidas Black Vintage', '32.000'),
-    'Crewneck'=>array('0822', 'Rugbby', '40.000'),
-    'Outer'=>array('0833', 'H&M', '20.000')
-);
-echo $secoutfits['Hoodie'][1];
+$people = array("kode_barang"=>["B001","B002","B003"],
+                "nama_barang"=>["hoodie","sweat shirt","crew neck"],
+                "Harga"=>[55000,65000,75000]);
+    for ($i=0; $i < count($people["kode_barang"]); $i++) { 
+        echo "|".$people["kode_barang"][$i];
+        for ($j=$i; $j < count($people["nama_barang"]); $j+=3) { 
+            // echo "\n";
+        echo "|".$people["nama_barang"][$j];
+        for ($k=$j; $k < count($people["Harga"]); $k+=3) { 
+            echo "|".$people["Harga"][$k];
+            echo "\n";
+            }
+        }
+    }
 
 echo ("\n");
 
