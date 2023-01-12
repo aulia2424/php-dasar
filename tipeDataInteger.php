@@ -47,18 +47,5 @@ echo "Integer Overflow 32 Bit : ";
 var_dump(9223372036854775808);
 
 
-// array ada dua ada Number array dan associative
-//number memanggilnya menggunakan number
-// associative menggunakan namanya atau value tetapi bukan number
 
-$lemariBaju = array("Baju", "Topi", "Sepatu");
-echo $lemariBaju[0]; // ini menggunakan number
-echo $lemariBaju["Baju"]; // ini menggunakan associative
-
-//two-dimensional array
-$people = array(
-    'online'=>array('David', 'Amy'),
-    'offline'=>array('John', 'Rob', 'Jack'),
-    'away'=>array('Arthur', 'Daniel')
- );
 ?>
